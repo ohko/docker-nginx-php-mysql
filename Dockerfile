@@ -6,4 +6,5 @@ RUN echo "deb http://mirrors.ustc.edu.cn/debian stretch main non-free contrib" >
     apt-get -y clean
 COPY start.sh /
 COPY nginx/default /etc/nginx/sites-available/default
+COPY nginx/fastcgi.conf /etc/nginx/fastcgi.conf
 CMD ["/start.sh"]

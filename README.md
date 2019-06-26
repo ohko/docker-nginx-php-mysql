@@ -14,6 +14,6 @@ docker run --rm -it \
 docker run --rm -it \
    -p 8080:80 \
    -v /srv:/var/www/html \
-   -e START_MYSQL \
+   -e START_MYSQL=1 \
    ohko/nginx-php-mysql
 ```
